@@ -25,9 +25,9 @@ def send_email(email, content):
             email_message['Body']['Text']['Data'] += f"\n Name : {pr['name']} ---- PR Title : {pr['title']}"
         else:
             break
-    email_json = json.dumps(email_message)
+    # email_json = json.dumps(email_message)
 
-    response = ses_client.send_email(
+    ses_client.send_email(
     Source='srikarsrivatsavvs@gmail.com',
     Destination={
         'ToAddresses': [email]
