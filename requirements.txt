@@ -1,0 +1,6 @@
+fastapi
+requests
+uvicorn
+datetime
+boto3
+python-dotenv
