@@ -14,5 +14,5 @@ About the API:
     2. Email sent in the request body isn't being validated if it's of the right format or not
     3. Repo url in the request body takes the api.github.com format only. Any other formats are not supported at the moment
     4. Emails can only be sent to my single verified email right now, as SES is in sandbox environment
-    5. If the repo has 0 pull requests, api sends out the same template with no pull request data. This can be handled at a later point
+    5. If the repo has 0 pull requests, api sends out the same template email with no pull request data. This can be handled at a later point
 
