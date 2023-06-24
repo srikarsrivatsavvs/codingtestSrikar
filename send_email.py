@@ -26,4 +26,3 @@ def send_email(email, content):
         }
     }
     )
-    return response
