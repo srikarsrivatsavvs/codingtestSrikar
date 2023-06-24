@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
-from item import Item
-from send_email import send_email
-from pull_requests import github_pull
+from modules.item import Item
+from utils.send_email import send_email
+from utils.pull_requests import github_pull
 
 app = FastAPI()
 
