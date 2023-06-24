@@ -22,7 +22,7 @@ def send_email(email, content):
     }
     for i, pr in enumerate(content):
         if i<5:
-            email_message['Body']['Text']['Data'] += f"\n Name : {pr['name']} ---- Title of the pr: {pr['title']}"
+            email_message['Body']['Text']['Data'] += f"\n Name : {pr['name']} ---- PR Title : {pr['title']}"
         else:
             break
     email_json = json.dumps(email_message)
