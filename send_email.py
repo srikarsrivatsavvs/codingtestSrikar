@@ -22,7 +22,6 @@ def send_email(email, content):
     }
     for i, pr in enumerate(content):
         if i<5:
-            print(i, pr)
             email_message['Body']['Text']['Data'] += f"\n Name : {pr['name']} ---- Title of the pr: {pr['title']}"
         else:
             break
